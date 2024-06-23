@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea lovers</title>
+    <style>
+        .top-text {
+            background-color: rgba(4, 192, 76, 0.986);
+            color: rgba(255, 255, 255);
+            padding: 1px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Tahoma;
+        }
+
+        .banner {
+            background-image: url(https://www.dilmahtea.com/assets/assets/Tea_Types_c877c885df_f93002d6db.jpg);
+            font-size: 24px;
+            font-family: Helvetica;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px, 0px, 10px;
+            width: 100%;
+            height: 130px;
+            position: relative;
+            overflow: hidden;
+            background-position: right;
+            background-size: cover;
+            isolation: isolate;
+        }
+
+        .banner::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: rgb(237, 241, 230);
+            opacity: .5;
+        }
+
+        .slogan {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: Tahoma;
+        }
+
+        .tea-lovers {
+            text-align: left;
+            font-family: Helvetica;
+            background: linear-gradient(white, rgba(209, 237, 171, 0.905));
+            padding: 20px, 0px, 20px;
+        }
+
+        .tea-intro {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding: 0px, 10px, 0px;
+        }
+
+        .tea-match {
+            text-align: left;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-left: 40px;
+            margin-right: 40px;
+            line-height: 24px;
+        }
+
+        .tea-match-title {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .link-ingredients {
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        .our-cup-tea {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .coded-by {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            color: rgb(63, 63, 63);
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            margin-top: 5px;
+            border-radius: 15px;
+        }
+
+        button {
+            display: block;
+            color: rgba(255, 255, 255);
+            font-size: 16px;
+            background-color: rgba(4, 192, 76, 0.986);
+            border: 50px;
+            border-color: rgba(255, 255, 255, 0.923);
+            border-width: thin;
+            border-style: hidden;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px rgb(205, 205, 204);
+            padding: 20px;
+            margin: 0 auto;
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255);
+            border-color: rgba(4, 192, 76, 0.986);
+            border-width: thin;
+            border-style: solid;
+            color: rgba(0, 163, 8, 0.899);
+            cursor: pointer;
+        }
+
+        hr {
+            border-top: 1px solid rgba(140, 236, 145, 0.912);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-text">
+            <p>20% discount in all our teas in My Tea Cup Match! experience </p>
+        </div>
+        </div>
+    </header>
+    <section class="banner">
+        <h1>
+            Tea lovers
+            <br>
+            <span class="slogan"><em>Tea that always matches you!</em></span>
+        </h1>
+    </section>
+    <div class="tea-lovers">
+        <div class="tea-intro">
+            <p>
+                Tea lovers gather thousands of ways to warm your heart and thousands more to refresh your day. We are
+                thrilled
+                to invite
+                you to a unique experience: "My Tea Cup Match!"
+            </p>
+        </div>
+        <p>
+        <div class="tea-match">
+            <span class="tea-match-title">My Tea Cup Match!</span>
+            <br>
+            We are proud to offer the best cup of tea for every moment. Our staff prepares fantastic tea that it
+            will always match.
+            <br>
+            <strong> How does it work? </strong>
+            <br>
+            Upon arrival, you will scan a QR code and answer a few tailored questions. Our staff will then pick from
+            our
+            ingredients
+            and make a cup of tea that is right for you!
+            </p>
+        </div>
+        <div class="link-ingredients">
+            <a href="https://www.onlyfoods.net/types-of-tea" target="_blank"> Learn more about types of teas in
+                Onlyfoods </a>
+        </div>
+        <p>
+            <hr>
+        <div class="our-cup-tea">
+            <strong>Up comming event!</strong>
+            <br>
+            <em> Our love in a Cup of Tea </em>
+            <br>
+            <img src="https://cdn.shopify.com/s/files/1/0165/6045/5780/files/tea-kindness-new-english-teas-1_480x480.jpg?v=1676639220"
+                width=250px />
+            <br>
+            We celebrate love and will host a dating event where you will match with another cup of tea.
+            </p>
+            <button>
+                Sing up for dating event: "Our love in a Cup of Tea"
+            </button>
+            <br>
+            <p class="coded-by">
+                Coded by Camila Velez
+            </p>
+        </div>
+    </div>
+    <script>
+        function singUpOurTea() {
+            let nameDating = prompt("What is your name?");
+            let age = prompt("How old are you?");
+            if (age < 18) {
+                alert("Sorry, " + nameDating + " you can't join to our dating event.");
+            } else {
+                let emailDating = prompt("What is your email adress?");
+                alert("Thank you, " + nameDating + " ,we'll be in touch!");
+            }
+        }
+
+
+        let singUpOurTeaButton = document.querySelector("button");
+        singUpOurTeaButton.addEventListener("click", singUpOurTea);
+
+
+    </script>
+
+</body>
+
+</html>
